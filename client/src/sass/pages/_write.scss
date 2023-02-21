@@ -1,0 +1,68 @@
+@use '../utilities/variables' as *;
+
+.user__articles {
+    margin: 30px 0 0 0;
+
+    .create__article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            max-height: 50px;
+            border-radius: 2px;
+            border: none;
+            background-color: $accent-primary;
+            padding: 10px;
+            color: $text-primary;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $accent-secondary;
+            }
+        }
+
+        .add__icon {
+            font-size: 18px;
+        }
+    }
+
+    .user__articles__list {
+        background-color: $bcg-secondary;
+        border-radius: 2px;
+        padding: 2px 10px;
+
+        ul {
+            list-style-type: none;
+            padding: 0 0 0 10px;
+
+            li {
+                padding: 12px 0;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: $text-dark;
+
+                .doc__icon {
+                    padding: 0 5px 3px 0;
+                    display: none;
+
+                    @include breakpoint(md) {
+                        display: inline;
+                    }
+                }
+
+                &:hover {
+                    color: $text-hover;
+                }
+            }
+
+        }
+    }
+}

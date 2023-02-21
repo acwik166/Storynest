@@ -1,0 +1,6 @@
+grade article
+show total grade
+likes dislikes
+top article
+anonymous comments separated from users
+login register

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "mongoose": "^6.9.2",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.6.0"
+  },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

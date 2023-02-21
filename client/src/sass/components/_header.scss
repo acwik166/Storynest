@@ -1,0 +1,119 @@
+@use '../utilities/variables' as *;
+
+header {
+    background-color: $bcg-secondary;
+
+    .main__heading {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include breakpoint(md) {
+            flex-direction: row;
+        }
+
+        .logo {
+            text-align: center;
+
+            h1 {
+                margin: 15px 0 0 15px;
+
+                @include breakpoint(md) {
+                    margin: 20px 0;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: $text-dark;
+            }
+
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include breakpoint(md) {
+                flex-direction: row;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+
+                margin: 0 0 15px;
+
+                @include breakpoint(md) {
+                    margin: 0;
+                }
+
+                li {
+                    @include breakpoint(md) {
+                        display: inline;
+                        margin: 0;
+                    }
+
+                    margin: 10px 0 0 0;
+
+                    transition: 0.3 ease all;
+
+                    font-size: 18px;
+                    padding: 0 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: $text-dark;
+
+                        &:hover {
+                            color: $text-hover;
+                        }
+                    }
+
+                }
+
+            }
+
+            .auth {
+                margin: 0 0 15px 0;
+
+                @include breakpoint(md) {
+                    margin: 0 0 0 15px;
+                }
+
+                button {
+                    border: none;
+                    padding: 10px 15px;
+                    border-radius: 2px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    margin: 0 5px;
+                }
+
+                .login {
+                    border: 1px solid $accent-primary;
+                    background-color: $bcg-secondary;
+
+                    &:hover {
+                        background-color: $bcg-primary;
+                    }
+
+                }
+
+                .signup {
+                    background-color: $accent-primary;
+                    color: $text-primary;
+
+                    &:hover {
+                        background-color: $accent-secondary;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

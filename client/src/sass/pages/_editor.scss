@@ -1,0 +1,19 @@
+@use '../utilities/variables' as *;
+
+.ql-container.ql-snow {
+    border: none;
+}
+
+.ql-toolbar.ql-snow {
+    border: none;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.ql-editor {
+    height: 297mm;
+    width: 210;
+}

@@ -1,0 +1,63 @@
+@use '../utilities/variables' as *;
+
+.articles {
+    margin: 50px 0 0 0;
+
+    h2 {
+        text-align: center;
+    }
+
+    .top__articles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include breakpoint(md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        gap: 10px;
+
+        .article {
+            background-color: $bcg-secondary;
+            border-radius: 2px;
+            padding: 15px;
+
+            h3 {
+                a {
+                    text-decoration: none;
+                    color: $text-dark;
+                }
+            }
+
+            .details {
+                display: flex;
+                flex-direction: row;
+
+                .detail__item {
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    margin: 0 0 10px 0;
+                }
+
+                .grade {
+                    color: gold;
+                }
+
+                .like {
+                    color: $accent-primary;
+                }
+
+                gap: 10px;
+            }
+
+            small {
+                color: $accent-primary;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
